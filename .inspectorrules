@@ -1,0 +1,1 @@
+Prefer typesafe and functional TypeScript, favoring correct, simple, and robust code. Refrain from using `any`. Do not leave extraneous code comments, but do give professional doc strings and in-code comments that point out the non-obvious. I like modern web ui, zinc and pops of color, no rounded corners everywhere please. Keep the sun/moon.

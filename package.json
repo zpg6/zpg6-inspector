@@ -1,0 +1,54 @@
+{
+  "name": "zpg6-inspector",
+  "version": "1.0.0",
+  "description": "A modern React + Vite template styled with the Inspector design language and powered by shadcn/ui",
+  "type": "module",
+  "author": "Inspector <founders@tryinspector.com>",
+  "license": "MIT",
+  "homepage": "https://tryinspector.com",
+  "keywords": [
+    "react",
+    "vite",
+    "typescript",
+    "tailwindcss",
+    "shadcn-ui",
+    "template",
+    "inspector"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.484.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^22.19.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^3.4.18",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.48.1",
+    "vite": "^6.4.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
