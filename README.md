@@ -27,26 +27,26 @@ A modern React + Vite template styled with the Inspector design language and pow
 
 1. Install dependencies:
 
-   ```bash
-   pnpm install
-   ```
+    ```bash
+    pnpm install
+    ```
 
 2. Start the development server:
 
-   ```bash
-   pnpm dev
-   ```
+    ```bash
+    pnpm dev
+    ```
 
 3. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 📜 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start development server |
-| `pnpm build` | Build for production |
+| Command        | Description              |
+| -------------- | ------------------------ |
+| `pnpm dev`     | Start development server |
+| `pnpm build`   | Build for production     |
 | `pnpm preview` | Preview production build |
-| `pnpm lint` | Run ESLint |
+| `pnpm lint`    | Run ESLint               |
 
 ## 📂 Project Structure
 
