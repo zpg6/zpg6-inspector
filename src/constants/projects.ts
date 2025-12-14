@@ -21,19 +21,6 @@ export const publishedProjects: Project[] = [
         why: "There's some nuance to configuring Better Auth with OpenNextJS, Drizzle ORM, and D1 for migrations with a decent DX. With this underneath, it really feels like you can focus on your application since everything's just taken care of (something I've been pitched many times but never truly felt).",
     },
     {
-        name: "esptool-react",
-        githubUrl: "https://github.com/zpg6/esptool-react",
-        description:
-            "A React library that provides hooks and context for programming ESP32/ESP8266 devices using esptool-js. Features React Hooks & Context API, Web Serial API integration, browser compatibility detection, firmware validation, real-time progress tracking, full TypeScript support, multi-chip support (ESP32, ESP8266), file management with address validation, and modern React 17+ hooks-first approach.",
-        packages: [{ type: "npm", url: "https://www.npmjs.com/package/esptool-react", name: "esptool-react" }],
-        demos: [{ url: "https://esptool-react.com", text: "esptool-react.com" }],
-        relatedLinks: [
-            { url: "https://github.com/esphome/esptool-js/issues/71", text: "this issue" },
-            { url: "https://github.com/esphome/esphome/issues/7565#issuecomment-2393913651", text: "this issue" },
-        ],
-        why: 'Ran into this issue with TypeScript port of the esptool and saw the President @OpenHomeFoundation. Founder @home-assistant respond with "Visit a React forum for guidance on React projects." on this issue for ESPHome. It was time to make my own.',
-    },
-    {
         name: "lin-ldf",
         githubUrl: "https://github.com/zpg6/lin-ldf",
         description:
@@ -51,6 +38,19 @@ export const publishedProjects: Project[] = [
             { type: "pypi", url: "https://pypi.org/project/azure-ai-inference-plus", name: "azure-ai-inference-plus" },
         ],
         why: "I was tired of my LangGraph agents failing when I needed to use Azure as my LLM provider.",
+    },
+    {
+        name: "esptool-react",
+        githubUrl: "https://github.com/zpg6/esptool-react",
+        description:
+            "A React library that provides hooks and context for programming ESP32/ESP8266 devices using esptool-js. Features React Hooks & Context API, Web Serial API integration, browser compatibility detection, firmware validation, real-time progress tracking, full TypeScript support, multi-chip support (ESP32, ESP8266), file management with address validation, and modern React 17+ hooks-first approach.",
+        packages: [{ type: "npm", url: "https://www.npmjs.com/package/esptool-react", name: "esptool-react" }],
+        demos: [{ url: "https://esptool-react.com", text: "esptool-react.com" }],
+        relatedLinks: [
+            { url: "https://github.com/esphome/esptool-js/issues/71", text: "this issue" },
+            { url: "https://github.com/esphome/esphome/issues/7565#issuecomment-2393913651", text: "this issue" },
+        ],
+        why: 'Ran into this issue with TypeScript port of the esptool and saw the President @OpenHomeFoundation. Founder @home-assistant respond with "Visit a React forum for guidance on React projects." on this issue for ESPHome. It was time to make my own.',
     },
     {
         name: "langchain-azure-ai-inference-plus",
