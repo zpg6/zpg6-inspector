@@ -3,6 +3,7 @@ import { publishedProjects, inProgressProjects } from "@/constants/projects";
 import { interests } from "@/constants";
 import { getPackageLabel } from "@/lib/package-utils";
 import type { PackageType } from "@/types";
+import { JSX } from "react";
 
 function NpmIcon() {
     return (
