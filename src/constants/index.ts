@@ -10,4 +10,3 @@ export const interests = [
     "BLE-based file transfer for embedded systems.",
     "Distributed compiler service for Android OS development and large Rust projects.",
 ];
-
