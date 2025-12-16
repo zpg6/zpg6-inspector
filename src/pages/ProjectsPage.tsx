@@ -308,18 +308,22 @@ export function ProjectsPage() {
                                     )}
 
                                     {demos && demos.length > 0 && (
-                                        <div className="flex flex-wrap gap-2">
-                                            {demos.map(demo => (
-                                                <a
-                                                    key={demo.url}
-                                                    href={demo.url}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="inline-flex items-center gap-1.5 text-xs font-medium text-sky-700 underline decoration-sky-500/30 underline-offset-4 transition-colors hover:text-sky-600 hover:decoration-sky-500/50 dark:text-sky-300 dark:decoration-sky-300/30 dark:hover:text-sky-200 dark:hover:decoration-sky-200/50"
-                                                >
-                                                    <ExternalLink className="h-3 w-3" />
-                                                    <span>{demo.text}</span>
-                                                </a>
+                                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                                            {demos.map((demo, i) => (
+                                                <span key={demo.url} className="inline-flex items-center gap-3">
+                                                    {i > 0 && (
+                                                        <span className="h-3 w-px bg-zinc-300 dark:bg-zinc-600" />
+                                                    )}
+                                                    <a
+                                                        href={demo.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="inline-flex items-center gap-1.5 text-xs font-medium text-sky-700 underline decoration-sky-500/30 underline-offset-4 transition-colors hover:text-sky-600 hover:decoration-sky-500/50 dark:text-sky-300 dark:decoration-sky-300/30 dark:hover:text-sky-200 dark:hover:decoration-sky-200/50"
+                                                    >
+                                                        <ExternalLink className="h-3 w-3" />
+                                                        <span>{demo.text} Live Demo</span>
+                                                    </a>
+                                                </span>
                                             ))}
                                         </div>
                                     )}
@@ -332,7 +336,7 @@ export function ProjectsPage() {
                                                     href={link.url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="inline-flex items-center gap-1 underline decoration-zinc-400/30 underline-offset-4 transition-colors hover:text-teal-600 hover:decoration-teal-500/40 dark:hover:text-teal-300 dark:hover:decoration-teal-300/40"
+                                                    className="inline-flex items-center gap-1 underline decoration-zinc-400/30 underline-offset-4 transition-colors hover:text-zinc-700 hover:decoration-zinc-500/50 dark:hover:text-zinc-200 dark:hover:decoration-zinc-400/50"
                                                 >
                                                     <span>{link.text}</span>
                                                 </a>
