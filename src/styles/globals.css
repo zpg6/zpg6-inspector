@@ -86,4 +86,13 @@
     .dark ::selection {
         @apply bg-zinc-700 text-zinc-50;
     }
+
+    img {
+        opacity: 0;
+        transition: opacity 400ms ease-in;
+    }
+
+    img.loaded {
+        opacity: 1;
+    }
 }
