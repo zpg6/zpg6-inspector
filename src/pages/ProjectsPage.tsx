@@ -107,7 +107,7 @@ function PythonIcon() {
 
 function VscodeIcon() {
     return (
-        <svg viewBox="0 0 128 128">
+        <svg viewBox="0 0 128 128" className="h-5 w-5" aria-hidden="true">
             <mask id="a" width="128" height="128" x="0" y="0" maskUnits="userSpaceOnUse" style={{ maskType: "alpha" }}>
                 <path
                     fill="#fff"
@@ -235,7 +235,7 @@ export function ProjectsPage() {
                         Published work
                     </h3>
                     <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                        Production-grade libraries, SDK wrappers, and protocol tooling that I actively maintain.
+                        Libraries, SDK wrappers, and protocol tooling that I actively maintain.
                     </p>
                 </div>
 
@@ -291,12 +291,16 @@ export function ProjectsPage() {
                                                     href={pkg.url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="inline-flex items-center gap-1.5 border border-zinc-200 bg-zinc-50 px-2.5 py-1 font-medium text-zinc-700 transition-colors hover:border-teal-500/60 hover:text-teal-600 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:border-teal-400/70 dark:hover:text-teal-300"
+                                                    className="inline-flex items-center gap-2.5 border border-zinc-200 bg-zinc-50 px-2.5 py-1.5 font-medium text-zinc-700 transition-colors hover:border-teal-500/60 hover:text-teal-600 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:border-teal-400/70 dark:hover:text-teal-300"
                                                 >
-                                                    <PackageIcon type={pkg.type} />
-                                                    <span>{pkg.name}</span>
-                                                    <span className="text-[11px] uppercase tracking-[0.16em] text-zinc-500">
-                                                        {getPackageLabel(pkg.type)}
+                                                    <span className="flex-shrink-0">
+                                                        <PackageIcon type={pkg.type} />
+                                                    </span>
+                                                    <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                                                        <span>{pkg.name}</span>
+                                                        <span className="text-[11px] uppercase tracking-[0.16em] text-zinc-500">
+                                                            {getPackageLabel(pkg.type)}
+                                                        </span>
                                                     </span>
                                                 </a>
                                             ))}

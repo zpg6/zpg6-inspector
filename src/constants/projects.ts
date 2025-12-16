@@ -31,7 +31,7 @@ export const publishedProjects: Project[] = [
             {
                 type: "vscode",
                 url: "https://marketplace.visualstudio.com/items?itemName=grimaldi-tech.aseprite-preview",
-                name: "grimaldi-tech.aseprite-preview",
+                name: "Aseprite Preview",
             },
         ],
         relatedLinks: [{ url: "https://github.com/aseprite/aseprite", text: "Aseprite" }],
