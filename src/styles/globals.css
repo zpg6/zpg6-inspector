@@ -96,3 +96,44 @@
         opacity: 1;
     }
 }
+
+@layer utilities {
+    .text-shine {
+        background: linear-gradient(
+            120deg,
+            currentColor 0%,
+            currentColor 40%,
+            theme(colors.zinc.400) 50%,
+            currentColor 60%,
+            currentColor 100%
+        );
+        background-size: 200% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s ease-in-out infinite;
+    }
+    .dark .text-shine {
+        background: linear-gradient(
+            120deg,
+            currentColor 0%,
+            currentColor 40%,
+            theme(colors.zinc.100) 50%,
+            currentColor 60%,
+            currentColor 100%
+        );
+        background-size: 200% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}

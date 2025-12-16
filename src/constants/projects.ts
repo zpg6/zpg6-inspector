@@ -2,6 +2,60 @@ import type { Project, InProgressProject } from "@/types";
 
 export const publishedProjects: Project[] = [
     {
+        name: "opennextjs-azure",
+        githubUrl: "https://github.com/zpg6/opennextjs-azure",
+        description:
+            "True serverless Next.js on Azure Functions. Built on the OpenNext framework, this adapter brings native Next.js support to Azure Functions with a Vercel-grade developer experience. Features include ISR via Blob Storage, streaming SSR, on-demand revalidation via Table/Queue Storage, image optimization, and one-command infrastructure provisioning via Bicep templates.",
+        packages: [
+            {
+                type: "npm",
+                url: "https://www.npmjs.com/package/opennextjs-azure",
+                name: "opennextjs-azure",
+            },
+        ],
+        demos: [
+            {
+                url: "https://opennext-basic-app-func-dev.azurewebsites.net",
+                text: "Live Demo",
+            },
+        ],
+        relatedLinks: [{ url: "https://opennext.js.org", text: "OpenNext" }],
+        why: "Azure Functions is Microsoft's serverless compute platform—comparable to AWS Lambda and Cloudflare Workers, both of which already have OpenNext adapters. This project bridges that gap, bringing the same Vercel-grade developer experience to Azure.",
+    },
+    {
+        name: "aseprite-preview",
+        githubUrl: "https://github.com/zpg6/aseprite-preview",
+        description:
+            "Visual Studio Code / Cursor extension for quick previews of Aseprite pixel art files (.aseprite and .ase). Features include animation playback with frame controls, zoom from 1x to 16x, sprite info display, smooth and pixel-perfect rendering toggle, multiple background options, and PNG export. Built from scratch with zero external dependencies using the official Aseprite file format specification.",
+        packages: [
+            {
+                type: "vscode",
+                url: "https://marketplace.visualstudio.com/items?itemName=grimaldi-tech.aseprite-preview",
+                name: "grimaldi-tech.aseprite-preview",
+            },
+        ],
+        relatedLinks: [{ url: "https://github.com/aseprite/aseprite", text: "Aseprite" }],
+        why: "Only meant for a quick look at a sprite to save having to open it fully in Aseprite.",
+    },
+    {
+        name: "embassy-agb",
+        githubUrl: "https://github.com/zpg6/embassy-agb",
+        description:
+            "Async Rust support for Game Boy Advance development using the Embassy executor integrated with the agb library. Features include async/await support, configurable time driver using any of GBA's 4 hardware timers, async wrappers for display/input/sound operations, and full agb compatibility. Uses halt() for power efficiency when no tasks are ready.",
+        packages: [
+            {
+                type: "crates",
+                url: "https://crates.io/crates/embassy-agb",
+                name: "embassy-agb",
+            },
+        ],
+        relatedLinks: [
+            { url: "https://embassy.dev", text: "Embassy" },
+            { url: "https://agbrs.dev", text: "agb" },
+        ],
+        why: "I really wanted to combine the modern async Rust ecosystem with retro game development.",
+    },
+    {
         name: "better-auth-cloudflare",
         githubUrl: "https://github.com/zpg6/better-auth-cloudflare",
         description:
@@ -40,19 +94,6 @@ export const publishedProjects: Project[] = [
         why: "I was tired of my LangGraph agents failing when I needed to use Azure as my LLM provider.",
     },
     {
-        name: "esptool-react",
-        githubUrl: "https://github.com/zpg6/esptool-react",
-        description:
-            "A React library that provides hooks and context for programming ESP32/ESP8266 devices using esptool-js. Features React Hooks & Context API, Web Serial API integration, browser compatibility detection, firmware validation, real-time progress tracking, full TypeScript support, multi-chip support (ESP32, ESP8266), file management with address validation, and modern React 17+ hooks-first approach.",
-        packages: [{ type: "npm", url: "https://www.npmjs.com/package/esptool-react", name: "esptool-react" }],
-        demos: [{ url: "https://esptool-react.com", text: "esptool-react.com" }],
-        relatedLinks: [
-            { url: "https://github.com/esphome/esptool-js/issues/71", text: "this issue" },
-            { url: "https://github.com/esphome/esphome/issues/7565#issuecomment-2393913651", text: "this issue" },
-        ],
-        why: 'Ran into this issue with TypeScript port of the esptool and saw the President @OpenHomeFoundation. Founder @home-assistant respond with "Visit a React forum for guidance on React projects." on this issue for ESPHome. It was time to make my own.',
-    },
-    {
         name: "langchain-azure-ai-inference-plus",
         githubUrl: "https://github.com/zpg6/langchain-azure-ai-inference-plus",
         description:
@@ -75,5 +116,18 @@ export const inProgressProjects: InProgressProject[] = [
         githubUrl: "https://github.com/zpg6/hex-calculator",
         description: "A simple calculator that converts between decimal, binary, and hexadecimal numbers.",
         why: "Always told myself one day I'd make a hex calculator site because I was tired of going to someone else's.",
+    },
+    {
+        name: "esptool-react",
+        githubUrl: "https://github.com/zpg6/esptool-react",
+        description:
+            "A React library that provides hooks and context for programming ESP32/ESP8266 devices using esptool-js. Features React Hooks & Context API, Web Serial API integration, browser compatibility detection, firmware validation, real-time progress tracking, full TypeScript support, multi-chip support (ESP32, ESP8266), file management with address validation, and modern React 17+ hooks-first approach.",
+        // packages: [{ type: "npm", url: "https://www.npmjs.com/package/esptool-react", name: "esptool-react" }],
+        // demos: [{ url: "https://esptool-react.com", text: "esptool-react.com" }],
+        // relatedLinks: [
+        //     { url: "https://github.com/esphome/esptool-js/issues/71", text: "this issue" },
+        //     { url: "https://github.com/esphome/esphome/issues/7565#issuecomment-2393913651", text: "this issue" },
+        // ],
+        why: 'Ran into this issue with TypeScript port of the esptool and saw the President @OpenHomeFoundation. Founder @home-assistant respond with "Visit a React forum for guidance on React projects." on this issue for ESPHome. It was time to make my own.',
     },
 ];

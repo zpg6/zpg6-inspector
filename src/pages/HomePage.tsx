@@ -125,7 +125,7 @@ export function HomePage() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-1.5 text-sm font-medium text-teal-600 underline decoration-teal-600/30 underline-offset-4 transition-colors hover:text-teal-500 hover:decoration-teal-500/40 dark:text-teal-400 dark:decoration-teal-400/30 dark:hover:text-teal-300 dark:hover:decoration-teal-300"
                                 >
-                                    <span>Try Inspector</span>
+                                    <span>tryinspector.com</span>
                                     <ExternalLink className="h-3.5 w-3.5" />
                                 </a>
                             </div>
@@ -134,7 +134,7 @@ export function HomePage() {
                         <div className="border-t border-dashed border-zinc-200 pt-4 dark:border-zinc-700">
                             <a
                                 href="#"
-                                className="inline-flex items-center gap-2 text-sm font-medium text-teal-600 underline decoration-teal-600/30 underline-offset-4 transition-colors hover:text-teal-500 hover:decoration-teal-500/40 dark:text-teal-400 dark:decoration-teal-400/30 dark:hover:text-teal-300 dark:hover:decoration-teal-300"
+                                className="text-shine inline-flex items-center gap-2 text-sm font-medium text-zinc-700 underline decoration-zinc-300 underline-offset-4 transition-colors hover:text-zinc-900 hover:decoration-zinc-400 dark:text-zinc-300 dark:decoration-zinc-600 dark:hover:text-zinc-100 dark:hover:decoration-zinc-500"
                             >
                                 <span>How I built this site with Inspector</span>
                                 <ExternalLink className="h-3.5 w-3.5" />

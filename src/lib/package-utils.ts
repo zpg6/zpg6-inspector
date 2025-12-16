@@ -5,6 +5,7 @@ export function getPackageLabel(type: PackageType): string {
         npm: "NPM",
         pypi: "PyPI",
         crates: "crates.io",
+        vscode: "VS Marketplace",
     };
     return labels[type];
 }

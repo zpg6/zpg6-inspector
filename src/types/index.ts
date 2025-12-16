@@ -1,6 +1,6 @@
 export type Page = "home" | "projects";
 
-export type PackageType = "npm" | "pypi" | "crates";
+export type PackageType = "npm" | "pypi" | "crates" | "vscode";
 
 export interface PackageLink {
     type: PackageType;
