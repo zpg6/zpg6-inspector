@@ -54,45 +54,49 @@ function App() {
                 <header className="text-center mb-8">
                     <h1 className="text-5xl font-bold mb-8 tracking-tight">Zach Grimaldi</h1>
 
-                    <nav className="flex items-center justify-center gap-3 flex-wrap">
-                        <button
-                            onClick={() => setCurrentPage("home")}
-                            className={`px-5 py-2.5 text-[0.9rem] font-semibold transition-colors ${
-                                currentPage === "home"
-                                    ? "bg-zinc-800 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-900 shadow-sm"
-                                    : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-100"
-                            }`}
-                        >
-                            Home
-                        </button>
-                        <button
-                            onClick={() => setCurrentPage("projects")}
-                            className={`px-5 py-2.5 text-[0.9rem] font-semibold transition-colors ${
-                                currentPage === "projects"
-                                    ? "bg-zinc-800 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-900 shadow-sm"
-                                    : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-100"
-                            }`}
-                        >
-                            Projects
-                        </button>
-                        <a
-                            href={githubLinks.profile}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group px-5 py-2.5 text-[0.9rem] font-semibold bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-2.5"
-                        >
-                            <GitHubMarkIcon className="w-5 h-5 transition-transform group-hover:scale-110" />
-                            GitHub
-                        </a>
-                        <a
-                            href="https://linkedin.com/in/zpg6"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group px-5 py-2.5 text-[0.9rem] font-semibold bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-2.5"
-                        >
-                            <LinkedInIcon className="w-5 h-5 text-[#0077b5] transition-transform group-hover:scale-110" />
-                            LinkedIn
-                        </a>
+                    <nav className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
+                        <div className="flex items-center gap-3">
+                            <button
+                                onClick={() => setCurrentPage("home")}
+                                className={`px-5 py-2.5 text-[0.9rem] font-semibold transition-colors ${
+                                    currentPage === "home"
+                                        ? "bg-zinc-800 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-900 shadow-sm"
+                                        : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-100"
+                                }`}
+                            >
+                                Home
+                            </button>
+                            <button
+                                onClick={() => setCurrentPage("projects")}
+                                className={`px-5 py-2.5 text-[0.9rem] font-semibold transition-colors ${
+                                    currentPage === "projects"
+                                        ? "bg-zinc-800 text-zinc-50 dark:bg-zinc-50 dark:text-zinc-900 shadow-sm"
+                                        : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-100"
+                                }`}
+                            >
+                                Projects
+                            </button>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <a
+                                href={githubLinks.profile}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group px-5 py-2.5 text-[0.9rem] font-semibold bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-2.5"
+                            >
+                                <GitHubMarkIcon className="w-5 h-5 transition-transform group-hover:scale-110" />
+                                GitHub
+                            </a>
+                            <a
+                                href="https://linkedin.com/in/zpg6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group px-5 py-2.5 text-[0.9rem] font-semibold bg-zinc-100 text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-100 transition-colors inline-flex items-center gap-2.5"
+                            >
+                                <LinkedInIcon className="w-5 h-5 text-[#0077b5] transition-transform group-hover:scale-110" />
+                                LinkedIn
+                            </a>
+                        </div>
                     </nav>
                 </header>
 

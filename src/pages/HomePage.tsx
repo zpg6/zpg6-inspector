@@ -40,7 +40,7 @@ export function HomePage() {
                         industry.
                     </p>
 
-                    <div className="flex flex-wrap items-start gap-6">
+                    <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
                         <div className="flex flex-col gap-1">
                             <a
                                 href={githubLinks.profile}
@@ -94,7 +94,7 @@ export function HomePage() {
                     </div>
                 </div>
 
-                <div className="relative">
+                <div className="relative my-6 md:my-0">
                     <div className="pointer-events-none absolute inset-0 -z-10">
                         <div className="absolute inset-0 bg-gradient-to-tr from-amber-200/40 via-transparent to-sky-200/40 blur-3xl dark:from-amber-300/20 dark:to-sky-300/20" />
                     </div>
@@ -185,8 +185,8 @@ export function HomePage() {
             </section>
 
             <section className="border-t border-zinc-200 pt-8 text-sm text-zinc-500 dark:border-zinc-700 dark:text-zinc-400">
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                    <div className="flex flex-wrap items-center gap-2">
+                <div className="flex flex-col items-center gap-5 text-center sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:text-left">
+                    <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-start">
                         <span className="text-zinc-400 dark:text-zinc-500">Built with</span>
                         <span className="border border-zinc-200 bg-zinc-50/50 px-2 py-0.5 text-xs font-medium dark:border-zinc-700 dark:bg-zinc-900/50">
                             React
