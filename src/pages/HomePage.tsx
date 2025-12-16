@@ -40,7 +40,7 @@ export function HomePage() {
                         industry.
                     </p>
 
-                    <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
+                    <div className="flex flex-col gap-6">
                         <div className="flex flex-col gap-1">
                             <a
                                 href={githubLinks.profile}
